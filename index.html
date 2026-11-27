@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>鳄鱼骑自行车</title>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#e7f2e8}svg{width:min(960px,100%)}.edge{stroke:#244c38;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="鳄鱼骑自行车动画">
+<defs><g id="wheel"><circle r="96" fill="#f6faed" stroke="#29443d" stroke-width="12"/><path d="M-90 0H90M0-90V90M-64-64L64 64M-64 64L64-64" stroke="#97aaa1" stroke-width="3"/><circle cy="-86" r="6" fill="#e7ac46"/><circle r="9" fill="#29443d"/></g></defs>
+<rect width="900" height="600" rx="28" fill="#dff1ef"/><circle cx="760" cy="100" r="44" fill="#f5d37c"/><path d="M0 465Q160 350 340 455T680 445T900 450V600H0Z" fill="#c9dfb4"/><path d="M0 537H900V600H0Z" fill="#e5dac3"/>
+<!-- 旋转车轮 -->
+<g transform="translate(245 435)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/><use href="#wheel"/></g></g>
+<g transform="translate(660 435)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/><use href="#wheel"/></g></g>
+<!-- 远侧腿 -->
+<path fill="none" stroke="#438653" stroke-width="25" stroke-linecap="round" d="M425 280L480 350L435 411"><animate attributeName="d" dur="1.2s" repeatCount="indefinite" values="M425 280L480 350L435 411;M425 280L490 368L459 435;M425 280L465 385L435 459;M425 280L455 350L411 435;M425 280L480 350L435 411"/></path>
+<!-- 自行车车架 -->
+<g fill="none" stroke="#df7449" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M245 435L365 320L435 435ZM365 320H560L435 435M560 320L660 435M560 320L547 280"/><path d="M365 320L355 290M547 280L583 265L608 272" stroke="#42584d" stroke-width="8"/></g><path d="M326 290H383" stroke="#29443d" stroke-width="15" stroke-linecap="round"/>
+<!-- 摆动的鳄鱼身体、头部及双臂 -->
+<g><animateTransform attributeName="transform" type="rotate" values="-1.2 410 290;1.2 410 290;-1.2 410 290" dur="1.2s" repeatCount="indefinite"/>
+<path class="edge" fill="#69ad67" d="M390 267Q300 284 205 235Q235 302 365 303L407 285Z"/><path fill="#38794c" d="M247 263L250 246L273 275L280 258L306 285L313 269L334 288Z"/>
+<path d="M478 225Q520 254 580 270" fill="none" stroke="#438552" stroke-width="19" stroke-linecap="round"/><ellipse cx="580" cy="270" rx="16" ry="10" fill="#438552"/>
+<path class="edge" fill="#72b86b" d="M365 285Q350 235 397 200Q446 171 483 206Q512 244 477 270Q430 300 365 285Z"/><path fill="#c8df91" d="M390 280Q440 282 474 254L478 229Q435 244 390 280Z"/>
+<path class="edge" fill="#7dc373" d="M456 207Q440 166 470 144Q491 128 512 145L589 144Q615 144 615 163Q615 188 581 192L503 196L481 221Z"/><path d="M506 176Q557 186 603 170" fill="none" stroke="#244c38" stroke-width="4"/><path d="M534 181L540 191L546 182M559 181L565 190L572 179" fill="#fffbea"/><circle class="edge" cx="485" cy="145" r="17" fill="#7dc373"/><circle cx="489" cy="143" r="10" fill="#fffbea"/><circle cx="492" cy="143" r="4" fill="#244c38"/><circle cx="595" cy="156" r="3" fill="#244c38"/>
+<path d="M459 224Q488 266 538 273L583 267" fill="none" stroke="#244c38" stroke-width="27" stroke-linecap="round"/><path d="M459 224Q488 266 538 273L583 267" fill="none" stroke="#7dc373" stroke-width="19" stroke-linecap="round"/><path class="edge" fill="#7dc373" d="M576 262Q586 252 594 263L600 272Q595 283 584 277L574 274Z"/></g>
+<!-- 曲柄与踏板 -->
+<circle cx="435" cy="435" r="20" fill="#42584d"/><g transform="translate(435 435)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/><path d="M0-24V24" stroke="#29443d" stroke-width="7"/>
+<g transform="translate(0 24)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.2s" repeatCount="indefinite"/><path d="M-20 0H20" stroke="#29443d" stroke-width="8"/></g></g><g transform="translate(0 -24)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="1.2s" repeatCount="indefinite"/><path d="M-20 0H20" stroke="#29443d" stroke-width="8"/></g></g></g></g>
+<!-- 近侧腿与脚同步踩踏 -->
+<path fill="none" stroke="#79bf70" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" d="M397 280L372 370L435 451"><animate attributeName="d" dur="1.2s" repeatCount="indefinite" values="M397 280L372 370L435 451;M397 280L360 350L411 427;M397 280L388 332L435 403;M397 280L399 354L459 427;M397 280L372 370L435 451"/></path><g><animateTransform attributeName="transform" type="translate" values="0 24;-24 0;0 -24;24 0;0 24" dur="1.2s" repeatCount="indefinite"/><path class="edge" fill="#80c574" d="M417 425Q435 416 451 426L464 435H417Z"/></g>
+</svg></body></html>
