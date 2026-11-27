@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e7f2e8;
+}
+
+main {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+svg {
+  display: block;
+  width: min(960px, 100%);
+  height: auto;
+}
+
+.edge {
+  stroke: #244c38;
+  stroke-width: 5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
